@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aetheria Spiritual Guidance Portal</title>
+    <!-- Tailind CSS v4 Direct Browser Script -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Custom Style Animations Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#080510] text-[#e0d8d0] font-sans selection:bg-[#9d7df0]/30 selection:text-white relative min-h-screen overflow-x-hidden">
+
+    <!-- Ambient Glow Drops -->
+    <div class="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-indigo-950/30 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-[40%] right-[-15%] w-[600px] h-[600px] bg-purple-950/25 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-[20%] left-[5%] w-[450px] h-[450px] bg-[#1a0f30]/30 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <!-- Sticky Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#080510]/80 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 group">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-[#9d7df0] to-indigo-900 flex items-center justify-center border border-white/10 shadow-[0_0_15px_rgba(157,125,240,0.3)]">
+            <svg class="w-4 h-4 text-white rotate-45 transform transition-transform group-hover:rotate-90 duration-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+            </svg>
+          </div>
+          <span class="font-serif text-lg tracking-[0.3em] font-light text-white uppercase sm:block hidden">
+            Aetheria
+          </span>
+        </a>
+
+        <!-- Menu Navigation links -->
+        <nav class="flex items-center gap-6 sm:gap-8 text-[11px] font-sans tracking-[0.2em] uppercase text-zinc-400 font-light">
+          <a href="#aspect-section" class="hover:text-[#9d7df0] transition-colors">Natal Synastry</a>
+          <a href="#affirmation-section" class="hover:text-[#9d7df0] transition-colors">Aura Advisor</a>
+          <a href="#tarot-section" class="hover:text-[#9d7df0] transition-colors">Tarot Deck</a>
+          <a href="#booking-section" class="hover:text-[#9d7df0] transition-colors">Scheduling</a>
+        </nav>
+
+        <!-- Dynamic CTA Header action -->
+        <a href="#booking-section" class="border border-white/10 hover:border-[#9d7df0] px-4 py-1.5 text-[10px] tracking-wider uppercase font-sans font-medium rounded-sm transition-all duration-300 bg-white/2 hover:bg-[#9d7df0] hover:text-[#080510]">
+          Schedule Session
+        </a>
+      </div>
+    </header>
+
+    <main class="relative z-10 pt-16">
+
+      <!-- Hero Showcase -->
+      <section class="relative overflow-hidden pt-36 pb-20 px-4 md:px-8 bg-[#080510]">
+        <!-- Shimmering Star background nodes -->
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-40" id="hero-stars-container"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10 text-center">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#140e2b]/60 backdrop-blur-md border border-[#9d7df0]/30 text-[10px] tracking-[0.4em] text-[#9d7df0] font-sans uppercase mb-8">
+            <svg class="w-3.5 h-3.5 text-[#9d7df0] animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707-.707"></path>
+            </svg>
+            Solstice Opening Available
+          </div>
+
+          <h1 class="text-5xl sm:text-7xl md:text-[84px] font-serif leading-[1.0] font-light italic text-[#e0d8d0] mb-8 tracking-wide">
+            The soul knows the <br>way home.
+          </h1>
+
+          <p class="max-w-xl mx-auto font-sans font-light text-sm sm:text-base text-zinc-400 leading-relaxed tracking-wide mb-10">
+            Modern metaphysical guidance rooted in ancient astronomical architecture. 
+            We bridge the gap between the material world and the divine unseen, custom-calibrating celestial nodes for seekers.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <a href="#aspect-section" class="w-full sm:w-auto text-center px-8 py-3.5 bg-[#9d7df0] text-[#080510] font-serif italic text-sm tracking-wider hover:bg-white transition-all duration-300 rounded-sm hover:shadow-[0_0_25px_rgba(157,125,240,0.3)] font-medium">
+              Initiate Alignment Consult
+            </a>
+            <a href="#affirmation-section" class="w-full sm:w-auto text-center px-8 py-3.5 bg-transparent border border-white/20 text-[11px] uppercase tracking-[0.25em] hover:bg-white hover:text-black hover:border-white transition-all duration-300 rounded-sm flex items-center justify-center gap-3">
+              <svg class="w-4 h-4 text-[#9d7df0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+              Consult Astral Oracle
+            </a>
+          </div>
+
+          <!-- Transit Stats Overlay -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-24 border-t border-b border-white/5 py-8 bg-white/[0.01] backdrop-blur-md rounded-lg">
+            <div class="flex flex-col items-center">
+              <svg class="w-4 h-4 text-amber-300 mb-2.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41m12.72-12.72l-1.41 1.41"></path>
+              </svg>
+              <span class="text-[9px] tracking-[0.25em] uppercase text-zinc-500 font-sans font-semibold">Sun Astral Node</span>
+              <span class="text-xs font-light text-zinc-300 mt-1">Sextile Neptune</span>
+            </div>
+            <div class="flex flex-col items-center border-l border-white/5">
+              <svg class="w-4 h-4 text-[#9d7df0] mb-2.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+              <span class="text-[9px] tracking-[0.25em] uppercase text-zinc-500 font-sans font-semibold">Lunar Stage</span>
+              <span class="text-xs font-light text-zinc-300 mt-1">Waning Gibbous</span>
+            </div>
+            <div class="flex flex-col items-center border-l border-white/5">
+              <svg class="w-4 h-4 text-[#9d7df0] mb-2.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+              <span class="text-[9px] tracking-[0.25em] uppercase text-zinc-500 font-sans font-semibold">Zenith Degrees</span>
+              <span class="text-xs font-light text-zinc-300 mt-1">Leo 18° Zenith</span>
+            </div>
+            <div class="flex flex-col items-center border-l border-white/5">
+              <svg class="w-4 h-4 text-[#9d7df0] mb-2.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 3v18M3 12h18M12 3l4 4M12 21l-4-4M3 12l4 4M21 12l-4-4"></path>
+              </svg>
+              <span class="text-[9px] tracking-[0.25em] uppercase text-zinc-500 font-sans font-semibold">Vibrational Field</span>
+              <span class="text-xs font-light text-zinc-300 mt-1">528Hz Solfeggio</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand Pillars -->
+      <section class="py-20 px-4 md:px-8 max-w-7xl mx-auto border-t border-white/5" id="pillars-section">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.02] flex flex-col space-y-4 hover:border-white/10 transition-all duration-300">
+            <div class="w-10 h-10 rounded-full bg-[#1b1928]/90 border border-[#9d7df0]/20 flex items-center justify-center text-[#9d7df0]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="m12 2 2 10 10 2-10 2-2 10-2-10-10-2 10-2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl text-white font-light italic">Universal Alignment Analysis</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed font-sans font-light">
+              Map the planetary structures, transit aspects, and house coordinates precisely configured at the millisecond of your genesis. Decode hidden karmic themes.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.02] flex flex-col space-y-4 hover:border-white/10 transition-all duration-300">
+            <div class="w-10 h-10 rounded-full bg-[#1b1928]/90 border border-[#9d7df0]/20 flex items-center justify-center text-[#9d7df0]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl text-white font-light italic">Channelled Aura Affirmation</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed font-sans font-light">
+              Invoke real-time artificial intelligence tuned to planetary transit calculations, delivering tailored mantras and aether advice for active nodes.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.02] flex flex-col space-y-4 hover:border-white/10 transition-all duration-300">
+            <div class="w-10 h-10 rounded-full bg-[#1b1928]/90 border border-[#9d7df0]/20 flex items-center justify-center text-[#9d7df0]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 3v1m0 16v1m9-9h-1M4 12H3"></path>
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl text-white font-light italic">Tarot Divination Intake</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed font-sans font-light">
+              Draw virtual cards from the Major Arcana to draw an instant spark of intuitive advice, or connect with Aetheria mystics for direct virtual séances.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Birth Chart Mandala Synthesizer -->
+      <section class="py-24 px-4 md:px-8 bg-[#080510] border-t border-white/5" id="aspect-section">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <span class="text-[11px] uppercase tracking-[0.5em] text-[#9d7df0] mb-3 block">Mathematic Synastry & Charting</span>
+            <h2 class="text-3xl sm:text-5xl font-serif text-[#e0d8d0] font-light italic tracking-wide mb-4">
+              Birth Chart Aspect Synthesizer
+            </h2>
+            <p class="text-xs sm:text-sm text-zinc-400 font-sans max-w-2xl mx-auto leading-relaxed">
+              Plunge into the deep mathematics of your genesis. By mapping the exact geographical location and stellar configurations, we translate cosmic coordinates live onto an interactive planetarium wheel.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 xl:grid-cols-12 gap-12 items-center">
+            
+            <div class="xl:col-span-4 space-y-6">
+              <form id="birth-chart-form" class="bg-white/[0.02] border border-white/5 backdrop-blur-md p-6 rounded-2xl space-y-5">
+                <h3 class="text-[10px] uppercase tracking-[0.2em] text-[#9d7df0] font-serif border-b border-white/5 pb-3 block">
+                  Stellar Coordinate Input
+                </h3>
+
+                <div>
+                  <label class="block text-[10px] uppercase tracking-wider text-zinc-500 font-sans mb-1.5">Date of Incarnation</label>
+                  <input type="date" id="birth-date-input" value="1996-08-18" class="w-full bg-[#120d24]/60 border border-white/10 text-zinc-200 rounded px-3 py-2 text-xs focus:outline-none focus:border-[#9d7df0] transition-all font-mono" required />
+                </div>
+
+                <div>
+                  <label class="block text-[10px] uppercase tracking-wider text-zinc-500 font-sans mb-1.5">Precise Birth Time</label>
+                  <input type="time" id="birth-time-input" value="08:45" class="w-full bg-[#120d24]/60 border border-white/10 text-zinc-200 rounded px-3 py-2 text-xs focus:outline-none focus:border-[#9d7df0] transition-all font-mono" required />
+                </div>
+
+                <div>
+                  <label class="block text-[10px] uppercase tracking-wider text-zinc-500 font-sans mb-1.5">City / Location of Birth</label>
+                  <div class="relative">
+                    <svg class="w-3.5 h-3.5 text-zinc-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <input type="text" id="birth-place-input" value="San Francisco, CA" class="w-full bg-[#120d24]/60 border border-white/10 text-zinc-200 rounded pl-9 pr-3 py-2 text-xs focus:outline-none focus:border-[#9d7df0] transition-all" required />
+                  </div>
+                </div>
+
+                <button type="submit" id="synthesize-chart-btn" class="w-full py-3 bg-transparent border border-white/20 text-[#e0d8d0] hover:bg-white hover:text-[#080510] font-sans font-medium uppercase tracking-[0.2em] text-xs rounded-sm cursor-pointer duration-300 transition-all">
+                  Forge Natal Mandala
+                </button>
+              </form>
+
+              <div id="chart-synthesis-outcome-box" class="bg-white/[0.02] border border-white/5 backdrop-blur-md p-5 rounded-2xl shadow-lg space-y-4 hidden">
+                <span class="text-[10px] tracking-[0.2em] text-[#9d7df0] font-serif font-bold uppercase block">Natal Aspect Matrix</span>
+                
+                <div class="space-y-3.5 text-zinc-300 font-sans font-light">
+                  <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-[#9d7df0] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                    <span class="text-xs">Ascendant Constellation:</span>
+                    <strong id="outcome-ascendant" class="text-xs text-white ml-auto font-serif italic">Rising Scorpio</strong>
+                  </div>
+                  
+                  <div class="flex items-center gap-2 border-t border-white/5 pt-2">
+                    <svg class="w-4 h-4 text-[#fdba74] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2"></path></svg>
+                    <span class="text-xs">Dominant Elements:</span>
+                    <strong id="outcome-energy" class="text-xs text-white ml-auto font-serif italic">Fire & Astral Vapor</strong>
+                  </div>
+
+                  <div class="flex items-center gap-2 border-t border-white/5 pt-2">
+                    <svg class="w-4 h-4 text-[#c084fc] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span class="text-xs">Sacred Alignment Totem:</span>
+                    <strong id="outcome-totem" class="text-xs text-white ml-auto font-serif italic">The Golden Falcon</strong>
+                  </div>
+                </div>
+
+                <p id="outcome-description" class="text-xs text-zinc-400 leading-relaxed pt-2.5 border-t border-white/5 text-justify font-sans font-light"></p>
+              </div>
+            </div>
+
+            <div class="xl:col-span-8 flex flex-col items-center">
+              <div class="relative w-full max-w-[420px] aspect-square bg-[#0b0818]/60 rounded-full border border-white/[0.08] flex items-center justify-center p-4" id="planetarium-wheel-container">
+                <div class="absolute inset-2 border-2 border-[#9d7df0]/10 rounded-full animate-cosmic-spin"></div>
+                <div class="absolute inset-8 border border-dashed border-white/10 rounded-full"></div>
+                <div class="absolute inset-16 border border-white/5 rounded-full"></div>
+                
+                <div class="w-3.5 h-3.5 rounded-full bg-[#9d7df0] shadow-[0_0_15px_rgba(157,125,240,0.8)] z-20"></div>
+
+                <svg class="absolute inset-0 w-full h-full pointer-events-auto" viewBox="0 0 400 400" id="mandala-svg">
+                  <!-- Generated dynamic layers reside here -->
+                </svg>
+              </div>
+
+              <p class="text-[11px] text-zinc-500 mt-6 font-sans font-light max-w-sm text-center">
+                💡 Interactive Mandala: Click on the connecting aspect vectors inside the wheel to parse celestial transits or hover planetary glyphs.
+              </p>
+
+              <div class="mt-6 w-full max-w-md bg-[#0b0818]/60 border border-white/5 p-4 rounded-xl min-h-[75px] flex flex-col justify-center">
+                <div id="aspect-details-display-box" class="text-center">
+                  <span class="text-xs text-zinc-500 font-sans italic font-light">Select an aspect vector line inside the solar mandala to decode transit synergy...</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Celestial Aura Alignment Ritual -->
+      <section class="py-24 px-4 md:px-8 bg-[#080510] border-t border-white/5" id="affirmation-section">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <span class="text-[11px] uppercase tracking-[0.5em] text-[#9d7df0] mb-3 block">Celestial Transits Invoke</span>
+            <h2 class="text-3xl sm:text-5xl font-serif text-[#e0d8d0] font-light italic tracking-wide mb-4">
+              Aura Alignment Ritual
+            </h2>
+            <p class="text-xs sm:text-sm text-zinc-400 font-sans max-w-lg mx-auto leading-relaxed">
+              Specify your zodiac threshold and active spirit focus node. Engage the cosmic synth-mystic generator to articulate your custom stellar advice.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <form id="affirmation-form" class="lg:col-span-5 bg-white/[0.02] border border-white/5 backdrop-blur-md p-6 rounded-2xl space-y-6 flex flex-col justify-between">
+              <div class="space-y-5">
+                <div>
+                  <label class="block text-[10px] uppercase tracking-[0.2em] text-[#9d7df0] font-serif mb-2">1. Astral Constellation</label>
+                  <select id="alignment-zodiac-select" class="w-full bg-[#120d24]/80 border border-white/10 text-zinc-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-[#9d7df0] transition-colors">
+                    <option value="Aries">♈ Aries</option>
+                    <option value="Taurus">♉ Taurus</option>
+                    <option value="Gemini">♊ Gemini</option>
+                    <option value="Cancer">♋ Cancer</option>
+                    <option value="Leo">♌ Leo</option>
+                    <option value="Virgo">♍ Virgo</option>
+                    <option value="Libra">♎ Libra</option>
+                    <option value="Scorpio">♏ Scorpio</option>
+                    <option value="Sagittarius">♐ Sagittarius</option>
+                    <option value="Capricorn">♑ Capricorn</option>
+                    <option value="Aquarius">♒ Aquarius</option>
+                    <option value="Pisces" selected>♓ Pisces</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-[10px] uppercase tracking-[0.2em] text-[#9d7df0] font-serif mb-2">2. Seekers Focus Axis</label>
+                  <div class="grid grid-cols-2 gap-2" id="ritual-theme-grid">
+                    <button type="button" data-theme="destiny" class="ritual-theme-btn flex flex-col items-center justify-center p-3 rounded-md border text-center transition-all cursor-pointer bg-[#9d7df0]/10 border-[#9d7df0] text-zinc-100">
+                      <span class="text-lg mb-1">🌌</span>
+                      <span class="text-[10px] font-sans font-light tracking-wide">Destiny & Alignment</span>
+                    </button>
+                    <button type="button" data-theme="inner-peace" class="ritual-theme-btn flex flex-col items-center justify-center p-3 rounded-md border text-center transition-all cursor-pointer bg-white/[0.01] border-white/5 hover:border-white/10 text-zinc-400">
+                      <span class="text-lg mb-1">🪷</span>
+                      <span class="text-[10px] font-sans font-light tracking-wide">Inner Peace & Soul</span>
+                    </button>
+                    <button type="button" data-theme="wealth" class="ritual-theme-btn flex flex-col items-center justify-center p-3 rounded-md border text-center transition-all cursor-pointer bg-white/[0.01] border-white/5 hover:border-white/10 text-zinc-400">
+                      <span class="text-lg mb-1">⚜️</span>
+                      <span class="text-[10px] font-sans font-light tracking-wide">Abundance Flow</span>
+                    </button>
+                    <button type="button" data-theme="love" class="ritual-theme-btn flex flex-col items-center justify-center p-3 rounded-md border text-center transition-all cursor-pointer bg-white/[0.01] border-white/5 hover:border-white/10 text-zinc-400">
+                      <span class="text-lg mb-1">💖</span>
+                      <span class="text-[10px] font-sans font-light tracking-wide">Relational Affinity</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-[10px] uppercase tracking-[0.2em] text-[#9d7df0] font-serif mb-2">3. Set Personal Intention</label>
+                  <textarea id="ritual-intention-textarea" rows="3" placeholder="Focusing on shadow self integration, restorative cycles..." class="w-full bg-[#120d24]/60 border border-white/10 text-zinc-200 rounded p-3 text-xs placeholder-zinc-600 focus:outline-none focus:border-[#9d7df0] transition-all resize-none"></textarea>
+                </div>
+              </div>
+
+              <button type="submit" id="invoke-ritual-submit-btn" class="w-full flex items-center justify-center gap-2.5 py-3 bg-[#9d7df0] hover:bg-white text-[#080510] font-sans font-medium tracking-[0.2em] text-xs uppercase rounded-sm cursor-pointer duration-300 transition-all">
+                Channel Alignment
+              </button>
+            </form>
+
+            <div class="lg:col-span-7 flex flex-col justify-center" id="alignment-results-panel-container">
+              
+              <div id="alignment-empty-view" class="p-8 rounded-2xl border border-dashed border-white/5 bg-white/[0.01] flex flex-col items-center text-center justify-center space-y-4 h-full">
+                <div class="w-12 h-12 rounded-full bg-[#1b1928]/40 flex items-center justify-center text-[#9d7df0] border border-white/5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-[#e0d8d0] font-serif tracking-wide text-sm font-light italic">Await the Oracle Invoke</h3>
+                  <p class="text-xs text-zinc-500 max-w-xs leading-relaxed mt-1 font-sans font-light">
+                    Configure your local thresholds and invoke the transits to materialize your custom divine reading.
+                  </p>
+                </div>
+              </div>
+
+              <div id="alignment-loading-view" class="flex flex-col items-center text-center p-8 space-y-4 justify-center hidden">
+                <div class="relative">
+                  <div class="w-10 h-10 border-2 border-dashed border-[#9d7df0] rounded-full animate-spin"></div>
+                  <div class="absolute inset-0 m-auto w-3 h-3 bg-white rounded-full animate-ping"></div>
+                </div>
+                <h3 class="text-[#e0d8d0] font-serif tracking-wide font-light italic text-lg">Aligning Celestial Node</h3>
+                <p class="text-xs text-zinc-500 max-w-xs leading-relaxed font-mono">
+                  Synthesizing cosmic alignments...
+                </p>
+              </div>
+
+              <div id="alignment-success-view" class="relative p-8 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-md overflow-hidden flex flex-col justify-between h-full space-y-6 hidden">
+                <div class="space-y-6 relative z-10">
+                  <div class="flex items-center justify-between border-b border-white/5 pb-4">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-full bg-[#1b1928]/90 border border-[#9d7df0]/30 flex items-center justify-center">
+                        <span id="output-zodiac-symbol" class="text-md text-[#9d7df0]">♓</span>
+                      </div>
+                      <div>
+                        <h4 id="output-zodiac-title" class="font-serif text-sm tracking-widest uppercase text-[#9d7df0]">Pisces Ascendant</h4>
+                        <span id="output-theme-title" class="text-[9px] font-mono tracking-wide text-zinc-500 uppercase block">Aspect Focus: Destiny</span>
+                      </div>
+                    </div>
+                    
+                    <span class="text-[9px] bg-white/5 text-zinc-400 border border-white/10 px-2 py-0.5 rounded font-mono uppercase">
+                      Lumina Sync
+                    </span>
+                  </div>
+
+                  <div class="space-y-2">
+                    <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-mono">Oracle Dictum:</span>
+                    <blockquote id="output-guidance-paragraph" class="text-base font-serif font-light italic text-[#e0d8d0]/95 leading-relaxed tracking-wide">
+                      "The spheres speak of a profound alignment in your creative house nodes. Hold space in silence."
+                    </blockquote>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-4 border-t border-b border-white/5 py-4">
+                    <div>
+                      <span class="block text-[9px] uppercase tracking-widest text-zinc-500 font-mono">Aura Resonance Color</span>
+                      <span id="output-aura-color" class="text-xs text-white/90 font-light font-sans mt-0.5 block">Shimmering Violet & Gold</span>
+                    </div>
+                    <div>
+                      <span class="block text-[9px] uppercase tracking-widest text-zinc-500 font-mono">Auspicious Digit</span>
+                      <span id="output-auspicious-number" class="text-xs text-[#9d7df0] font-mono font-medium block mt-0.5 tracking-wider">77</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4 bg-[#140e2b]/40 p-3.5 rounded-lg border border-white/5">
+                    <svg class="w-4 h-4 text-[#9d7df0] shrink-0 mt-0.5 animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    <div>
+                      <span class="block text-[9px] font-mono tracking-wider uppercase text-zinc-500">Sacred Ritual Guidance</span>
+                      <p id="output-ritual-advice" class="text-xs text-zinc-300 font-light leading-relaxed mt-1">
+                        Breathe fully for four cycles during the solar meridian. Maintain stillness.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-right text-[9px] font-mono tracking-[0.25em] text-[#9d7df0]/50 uppercase font-light relative z-10">
+                  CHANNELD VIA AETHERIA CELESTIAL
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Interactive Tarot Drawer Deck -->
+      <section class="py-24 px-4 md:px-8 bg-[#090614] border-t border-white/5 overflow-hidden" id="tarot-section">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <span class="text-[11px] uppercase tracking-[0.5em] text-[#9d7df0] mb-3 block">Virtual Major Arcana Intake</span>
+            <h2 class="text-3xl sm:text-5xl font-serif text-[#e0d8d0] font-light italic tracking-wide mb-4">
+              The Interactive Hermetic Deck
+            </h2>
+            <p class="text-xs sm:text-sm text-zinc-400 font-sans max-w-lg mx-auto leading-relaxed">
+              Clear your neural pathways, hold a specific dilemma in your focus, and draw a single card below to synthesize instantaneous tarot guidance.
+            </p>
+          </div>
+
+          <div id="tarot-unopened-deck" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mt-8">
+            <button type="button" data-tarot-index="0" class="tarot-card-element group relative cursor-pointer aspect-[1/1.6] rounded-2xl bg-gradient-to-b from-[#181135] to-[#04020a] border border-white/5 hover:border-[#9d7df0]/40 flex flex-col items-center justify-center p-6 text-center transition-all duration-500 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.5)] outline-none">
+              <div class="absolute inset-2 border border-[#9d7df0]/20 rounded-xl"></div>
+              <div class="absolute inset-4 border border-dashed border-white/5 rounded-lg flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#9d7df0]/40 group-hover:scale-105 duration-300 transition-all">
+                  <svg class="w-6 h-6 text-zinc-600 group-hover:text-[#9d7df0] transition-colors" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <span class="absolute bottom-6 text-[10px] uppercase tracking-[0.3em] text-zinc-600 group-hover:text-zinc-400 duration-300">
+                DRAW ARCHETYPE
+              </span>
+            </button>
+
+            <button type="button" data-tarot-index="1" class="tarot-card-element group relative cursor-pointer aspect-[1/1.6] rounded-2xl bg-gradient-to-b from-[#181135] to-[#04020a] border border-white/5 hover:border-[#9d7df0]/40 flex flex-col items-center justify-center p-6 text-center transition-all duration-500 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.5)] outline-none">
+              <div class="absolute inset-2 border border-[#9d7df0]/20 rounded-xl"></div>
+              <div class="absolute inset-4 border border-dashed border-white/5 rounded-lg flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#9d7df0]/40 group-hover:scale-105 duration-300 transition-all">
+                  <svg class="w-6 h-6 text-zinc-600 group-hover:text-[#9d7df0] transition-colors" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <span class="absolute bottom-6 text-[10px] uppercase tracking-[0.3em] text-zinc-600 group-hover:text-zinc-400 duration-300">
+                DRAW ARCHETYPE
+              </span>
+            </button>
+
+            <button type="button" data-tarot-index="2" class="tarot-card-element group relative cursor-pointer aspect-[1/1.6] rounded-2xl bg-gradient-to-b from-[#181135] to-[#04020a] border border-white/5 hover:border-[#9d7df0]/40 flex flex-col items-center justify-center p-6 text-center transition-all duration-500 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.5)] outline-none">
+              <div class="absolute inset-2 border border-[#9d7df0]/20 rounded-xl"></div>
+              <div class="absolute inset-4 border border-dashed border-white/5 rounded-lg flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#9d7df0]/40 group-hover:scale-105 duration-300 transition-all">
+                  <svg class="w-6 h-6 text-zinc-600 group-hover:text-[#9d7df0] transition-colors" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <span class="absolute bottom-6 text-[10px] uppercase tracking-[0.3em] text-zinc-600 group-hover:text-zinc-400 duration-300">
+                DRAW ARCHETYPE
+              </span>
+            </button>
+          </div>
+
+          <div id="tarot-revealed-container" class="max-w-md mx-auto mt-8 hidden">
+            <div id="tarot-card-color-frame" class="p-8 rounded-2xl border-2 border-[#9d7df0] shadow-xl space-y-6 text-center relative overflow-hidden">
+              <div class="space-y-1.5 pt-4">
+                <span id="revealed-tarot-type" class="text-[10px] font-mono uppercase tracking-[0.25em] text-[#9d7df0] font-semibold">MAJOR ARCANA</span>
+                <h3 id="revealed-tarot-name" class="font-serif text-3xl font-light italic text-[#e0d8d0]">The Star (XVIII)</h3>
+              </div>
+
+              <div class="w-16 h-16 rounded-full bg-[#080510] border border-white/10 flex items-center justify-center mx-auto">
+                <svg class="w-6 h-6 text-purple-200" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+
+              <div class="space-y-4">
+                <span class="text-[9px] font-mono tracking-widest text-zinc-500 uppercase block">Guidance Reading:</span>
+                <p id="revealed-tarot-interpretation" class="text-sm text-zinc-300 font-sans font-light leading-relaxed px-2">
+                  A beacon of hope, celestial inspiration, and profound spiritual renewal. The cosmic spheres promise a phase of peace and alignment.
+                </p>
+              </div>
+
+              <div class="border-t border-white/5 pt-4 flex items-center justify-center gap-4">
+                <button type="button" id="tarot-draw-again-btn" class="text-[11px] font-sans font-medium uppercase tracking-[0.15em] text-[#9d7df0] hover:text-white transition-colors cursor-pointer bg-transparent border-0">
+                  Draw Another
+                </button>
+                <span class="text-zinc-600">|</span>
+                <a href="#booking-section" class="text-[11px] font-sans font-medium uppercase tracking-[0.15em] hover:text-[#9d7df0] transition-colors text-[#e0d8d0]">
+                  Reserve Séance
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section: Consultation Ingress Booking -->
+      <section class="py-24 px-4 md:px-8 bg-[#080510] border-t border-white/5" id="booking-section">
+        <div class="max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-6">
+              <span class="text-[11px] uppercase tracking-[0.5em] text-[#9d7df0] block">Synchronistic Bookings</span>
+              <h2 class="text-3xl sm:text-5xl font-serif text-[#e0d8d0] font-light italic tracking-wide leading-tight">
+                Reserve a Virtual Séance
+              </h2>
+              <p class="text-xs sm:text-sm text-zinc-400 font-sans leading-relaxed font-light">
+                Direct virtual consultation with our lead hermetic practitioners. Receive deeper interpretations of your natal structures, birth aspect charts, and complete spiritual transits.
+              </p>
+
+              <div class="space-y-4 pt-4 border-t border-white/5 font-sans font-light">
+                <div class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-[#9d7df0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  <span class="text-xs text-zinc-300">60-minute virtual cosmic video session</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-[#9d7df0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  <span class="text-xs text-zinc-300">High-resolution PDF planetary aspect chart report</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-[#9d7df0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  <span class="text-xs text-zinc-300">Personalized channelled mantras catalog</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="bg-white/[0.02] border border-white/5 backdrop-blur-md p-8 rounded-2xl relative overflow-hidden" id="booking-card">
+                
+                <form id="booking-session-form" class="space-y-5">
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-[10px] uppercase tracking-wider text-zinc-500 font-sans mb-1.5">Your Name</label>
+                      <div class="relative">
+                        <svg class="w-3.5 h-3.5 text-zinc-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        <input type="text" id="booking-name-input" placeholder="Melody Weiss" class="w-full bg-[#120d24]/60 border border-white/10 text-zinc-200 rounded pl-9 pr-3 py-2 text-xs focus:outline-none focus:border-[#9d7df0] transition-all" required />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label class="block text-[10px] uppercase tracking-wider text-zinc-500 font-sans mb-1.5">Email Address</label>
+                      <div class="relative">
+                        <svg class="w-3.5 h-3.5 text-zinc-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <input type="email" id="booking-email-input" placeholder="melody@astral.com" class="w-full bg-[#120d24]/60 border border-white/10 text-zinc-200 rounded pl-9 pr-3 py-2 text-xs focus:outline-none focus:border-[#9d7df0] transition-all" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-[10px] uppercase tracking-wider text-zinc-500 font-sans mb-1.5">Ritual Synthesis Focus</label>
+                    <select id="booking-focus-select" class="w-full bg-[#120d24]/80 border border-white/10 text-zinc-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-[#9d7df0] transition-all">
+                      <option value="astral-chart">Full Astral Natal Chart Synastry</option>
+                      <option value="tarot-reading">Tarot Arcana Intake Session</option>
+                      <option value="shadow-sessions">Ancestor Node Integration Séance</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label class="block text-[10px] uppercase tracking-wider text-zinc-500 font-sans mb-1.5">Special Desires or Dilemmas</label>
+                    <div class="relative">
+                      <svg class="w-3.5 h-3.5 text-zinc-500 absolute left-3 top-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                      <textarea id="booking-notes-input" placeholder="Detailing any active retrogrades or critical planetary squares..." rows="3" class="w-full bg-[#120d24]/60 border border-white/10 text-zinc-200 rounded pl-9 pr-3 py-2.5 text-xs focus:outline-none focus:border-[#9d7df0] transition-all resize-none"></textarea>
+                    </div>
+                  </div>
+
+                  <button type="submit" id="booking-submit-btn" class="w-full py-3 bg-[#9d7df0] hover:bg-white text-[#080510] font-sans font-medium uppercase tracking-[0.2em] text-xs rounded-sm cursor-pointer duration-300 transition-all">
+                    Submit Intent to Schedule
+                  </button>
+                </form>
+
+                <div id="booking-success-box" class="text-center py-12 space-y-4 hidden">
+                  <div class="w-12 h-12 rounded-full bg-[#9d7df0]/10 border border-[#9d7df0] flex items-center justify-center mx-auto text-[#9d7df0]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <h3 class="text-2xl font-serif font-light text-[#e0d8d0] italic">Celestial Order Received</h3>
+                  <p class="text-xs text-zinc-400 max-w-sm mx-auto leading-relaxed font-sans font-light">
+                    Thank you, <span id="success-display-name" class="text-[#9d7df0] font-medium">Melody</span>. Your alignment booking intake has been registered. An aetherial facilitator will transmit calendar coordinates to <span id="success-display-email" class="text-white font-mono">melody@astral.com</span>.
+                  </p>
+                  <button type="button" id="booking-success-reset-btn" class="text-xs font-mono uppercase tracking-widest text-[#9d7df0] hover:text-white transition-colors duration-200 cursor-pointer pt-6 bg-transparent border-0">
+                    Reset Booking Card
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-16 px-4 md:px-8 border-t border-white/5 bg-[#05030b] text-center relative z-10">
+      <div class="max-w-4xl mx-auto space-y-8">
+        <div class="flex flex-col items-center space-y-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#9d7df0]/40 to-indigo-950 flex items-center justify-center border border-white/10">
+            <svg class="w-5 h-5 text-[#9d7df0] rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+            </svg>
+          </div>
+          <h4 class="font-serif text-2xl tracking-[0.4em] text-white uppercase font-light">
+            A E T H E R I A
+          </h4>
+          <span class="text-[10px] font-mono tracking-widest text-[#9d7df0]/60 uppercase">
+            Spiritual Guidance Portal
+          </span>
+        </div>
+
+        <p class="text-xs text-zinc-500 max-w-md mx-auto leading-relaxed font-sans font-light">
+          All algorithms and artificial aether guidance systems are calculated utilizing premium alignment models. Consultation parameters remain confidential according to the high hermetic guidelines.
+        </p>
+
+        <div class="flex justify-center gap-6 text-[10px] font-mono uppercase tracking-[0.2em] text-[#9d7df0]/60">
+          <a href="#" class="hover:text-white transition-colors">Privacy Axis</a>
+          <span>•</span>
+          <a href="#" class="hover:text-white transition-colors">Hermetic Terms</a>
+          <span>•</span>
+          <a href="#" class="hover:text-[#9d7df0] transition-colors">Support Node</a>
+        </div>
+
+        <div class="text-[10px] text-zinc-650 font-sans tracking-wide">
+          © 2026 Aetheria Celestial Align. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Logic Engine Script -->
+    <script src="app.js"></script>
+  </body>
+</html>

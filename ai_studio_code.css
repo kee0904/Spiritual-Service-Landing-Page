@@ -1,0 +1,19 @@
+/* Custom ambient styles and keyframe animations */
+
+@keyframes cosmic-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes cosmic-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.95); }
+  50% { opacity: 0.85; transform: scale(1.05); }
+}
+
+.animate-cosmic-spin {
+  animation: cosmic-spin 120s linear infinite;
+}
+
+.animate-cosmic-pulse {
+  animation: cosmic-pulse 4s ease-in-out infinite;
+}
